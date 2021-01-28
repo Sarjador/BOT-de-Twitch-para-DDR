@@ -1,0 +1,28 @@
+{
+  "name": "bot-twitch-ddr-moderator-help",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src --exec babel-node",
+    "dist": "babel src --out-dir dist",
+    "start": "npm run dist && node dist",
+    "clean":"rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "rimraf": "^3.0.2",
+    "tmi.js": "^1.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-node": "0.0.1-security",
+    "nodemon": "^2.0.7"
+  }
+}
