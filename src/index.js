@@ -3,7 +3,12 @@ import dotenv from "dotenv";
 // Importamos los comandos del controller
 import * as comandos from "./Comandos.controller";
 // Inicializamos las variables de entorno
-dotenv.config();
+// Si no tienes el archivo .env en la raiz del proyecto debes crearlo 
+// Y escribir dentro de el
+// BOT_USERNAME = DiscoDuroDeRoer
+// OAUTH_TOKEN = oauth:${TOKEN_BOT}
+// CHANNEL_NAME = NOMBRE_DEL_CANAL_DONDE_SE_VA_A_USAR
+// dotenv.config();
 // Inicializando las optiones de configuracion para el cliente de Twitch
 const options = {
   options: { debug: true },
